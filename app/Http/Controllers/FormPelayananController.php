@@ -53,7 +53,7 @@ class FormPelayananController extends Controller
             'tanggal'=> $tgl,
             // 'hasVaccinated' => Request()->hasVaccinated,
             // 'notes' => Request()->notes,
-            'created_at' => date('d M Y')
+            'created_at' => date('d-m-Y H:i:s')
         ];
         
         $dataEmail = [
