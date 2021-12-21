@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100% !important">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>ART MEDIA - @yield('title')</title>
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,6 +17,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{secure_asset('template')}}/dist/css/adminlte.min.css">
   <link rel="stylesheet" href="{{secure_asset('css')}}/custom/form/style.css">
+  <link rel="stylesheet" href="{{secure_asset('css')}}/animation/loading/style.css">
   <!-- JQUERY UI -->
   <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
   
@@ -59,6 +61,9 @@
 </style>
 </head>
 <body>
+    <div class="bg-loader">
+        <img src="{{secure_asset('img/logo-media.png')}}" alt="" class="loader">
+    </div>
     <div class="wrapper">
         @yield('content')
     </div>
@@ -77,6 +82,7 @@
 <script src="{{secure_asset('js')}}/custom/form/config.js"></script>
 <script src="{{secure_asset('js')}}/custom/form/timer.js"></script>
 <script src="{{secure_asset('js')}}/custom/form/id-datepicker.js"></script>
+{{-- <script src="{{ secure_asset('js/animation/snow/index.js') }}"></script> --}}
 <script>
     $(document).ready(function() {
         $.datepicker.setDefaults(
@@ -101,6 +107,7 @@
 
     })
 </script>
+<script src="{{ secure_asset('js/animation/loading/index.js') }}"></script>
 
 @include('sweetalert::alert')
 

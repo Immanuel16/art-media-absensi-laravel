@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\SendMail;
+use App\Mail\SendMailFormPelayanan;
 use App\Models\FormPelayananModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -25,12 +26,12 @@ class FormPelayananController extends Controller
     
     public function add(){
         Request()->validate([
-            'fullname' => 'required|min:4|regex:/^[\pL\s]+$/u',
+            'fullname' => 'required|min:3|regex:/^[\pL\s]+$/u',
             'email' =>'required|regex:/^.+@.+$/i'
         ],
         [
             'fullname.required' => 'nama lengkap wajib diisi',
-            'fullname.min' => 'nama lengkap minimal 4 huruf',
+            'fullname.min' => 'nama lengkap minimal 3 huruf',
             'fullname.regex' => 'nama lengkap hanya berupa huruf saja',
             'email.required' => 'email wajib diisi',
             'email.regex' => 'email tidak sesuai dengan format'
@@ -39,17 +40,28 @@ class FormPelayananController extends Controller
         
         $fullname = Request()->fullname;
         
-        $tgl = implode(', ', Request()->tanggal);
+        $tgl = implode('; ', Request()->tanggal);
+        $tglExplode = explode("; ", $tgl);
         
-        $allUsername = DB::table('data_pelayanan')->select('fullname')->where('fullname', 'like', $fullname)->where('tanggal', 'like', '%juni%')->first();
+        $allUsername = DB::table('data_pelayanan')->select('fullname')->where('fullname', 'like', $fullname)->where('tanggal', 'like', '%januari%')->first();
         
         // dd($allUsername);
         
         $data = [
-            'fullname' => Request()->fullname,
+            'fullname' => strtolower(Request()->fullname),
             'email' => Request()->email,
             'tanggal'=> $tgl,
-            'notes' => Request()->notes
+            // 'hasVaccinated' => Request()->hasVaccinated,
+            // 'notes' => Request()->notes,
+            'created_at' => date('d M Y')
+        ];
+        
+        $dataEmail = [
+            'fullname' => Request()->fullname,
+            'email' => Request()->email,
+            'tanggal'=> $tglExplode,
+            // 'notes' => Request()->notes,
+            // 'created_at' => date('d M Y')
         ];
         
         
@@ -63,22 +75,30 @@ class FormPelayananController extends Controller
                 Alert::success('Terima Kasih', 'Data Anda sudah kami terima');
                 dd("bisa doang");
                 $this->FormPelayananModel->saveData($data);
-                $this->sendEmail(Request()->email, $data);
+                $this->sendEmailPelayanan(Request()->email, $dataEmail);
                 return redirect('form-pelayanan');
             }
         } else{
             Alert::success('Terima Kasih', 'Data Anda sudah kami terima');
                 // dd("bisa");
                 $this->FormPelayananModel->saveData($data);
-                $this->sendEmail(Request()->email, $data);
+                $this->sendEmailPelayanan(Request()->email, $dataEmail);
                 return redirect('form-pelayanan');
+                
+                
         }
         
     }
     
-    public function sendEmail($emailReceiver, $dataArray){
+    // public function sendEmail($emailReceiver, $dataArray){
+    //     $email = $emailReceiver;
+    //     $data = $dataArray;
+    //     Mail::to($emailReceiver)->send(new SendMail($dataArray));
+    // }
+    
+    public function sendEmailPelayanan($emailReceiver, $dataArray){
         $email = $emailReceiver;
         $data = $dataArray;
-        Mail::to($email)->send(new SendMail($data));
+        Mail::to($emailReceiver)->send(new SendMailFormPelayanan($dataArray));
     }
 }
