@@ -13,7 +13,8 @@
 #thumbnail-register {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     /* background: #003060; */ /* November */
-    background: #6e040e;
+    /* background: #6e040e; */ /* Desember */
+    background-image: linear-gradient(-45deg, #f4e9e5 50%, #f7e8e5 50%); /* Januari */
     /* backdrop-filter: blur(4px);   */
     opacity: 0.8;
     width: 90%;
@@ -25,9 +26,6 @@
     border-radius: 15px;
     padding: 4px;
 }
-
-
-
 
 #thumbnail-header-register {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -141,16 +139,16 @@ input[type="text"], input[type="password"], input[type="number"] {
 }
 
 input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hover {
-    border: 1px solid #cccccc;
+    border: 1px solid #75594e;
 }
 
 input[type="password"]:focus, input[type="password"]:active, input[type="text"]:focus, input[type="text"]:active, input[type="number"]:focus, input[type="number"]:active {
-    border: 1px solid #fff;
+    border: 1px solid #75594e;
     width: 100%;
 }
 
 input[type="password"]:focus+label:before, input[type="password"]:active+label:before input[type="text"]:focus+label:before, input[type="text"]:active+label:before, input[type="number"]:focus+label:before, input[type="number"]:active+label:before {
-    color: #fff;
+    color: #75594e;
 }
 
 input[type="password"]+label, input[type="text"]+label, input[type="number"]+label {
@@ -233,7 +231,7 @@ input[type="checkbox"]+label {
     margin-bottom: 0px;
     font: 1em 'PT Sans Narrow', sans-serif;
     /* color: black; */
-    color: #fff; /* warna label checkbox */
+    color: #75594e; /* warna label checkbox */
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -249,7 +247,7 @@ input[type="checkbox"]+label:before {
     display: block;
     width: 15px;
     height: 15px;
-    border: 1px solid #fff; /* wana kotak checkbox sebelum di ceklis */
+    border: 1px solid #75594e; /* wana kotak checkbox sebelum di ceklis */
     position: absolute;
     left: 0;
     top: 4px;
@@ -264,7 +262,7 @@ input[type="checkbox"]:checked+label:before {
     left: 5px;
     border-radius: 0;
     opacity: 1;
-    border: 3.5px solid #fff; /* wana kotak checkbox setelah di ceklis */
+    border: 3.5px solid #75594e; /* wana kotak checkbox setelah di ceklis */
     border-top-color: transparent;
     border-left-color: transparent;
     -webkit-transform: rotate(45deg);
@@ -291,8 +289,8 @@ button.btn-custom:hover {
 .btn-custom-sendiri {
     width: 100px;               
     height: 40px;
-    background: rgb(221, 52, 52);
-    border: 3px solid rgb(221, 52, 52);
+    background: #75594e;
+    border: 3px solid #75594e;
     text-align: center;
     font-size: 1.3em;
     color: #eee;
@@ -320,13 +318,13 @@ button.btn-custom:hover {
 
 .title-form {
     font-size: 1.8em;
-    color: #fff; /* warna teks judul form */
+    color: #75594e; /* warna teks judul form */
     font-weight: 800;
     padding-bottom: 10px;
     text-align: center;
     margin-bottom: 25px;
-    border: 2px solid #e74949af; /* warna sisi luar kotak form  */
-    background: #e74949af; /* background judul form */
+    border: 2px solid #75594e; /* warna sisi luar kotak form  */
+    background: #75594e; /* background judul form */
     /* margin-top: -50px; */
     font-family: 'Zen Old Mincho', serif;
     text-transform: capitalize;
@@ -364,9 +362,9 @@ button.btn-custom:hover {
 }
 
 .custom-bg-alert{
-    background: #e74949af; /* background warna timer batas waktu */
-    border: 2px solid #e74949af;
-    color: white !important;
+    background: #f0c9b8; /* background warna timer batas waktu */
+    border: 2px solid #f0c9b8;
+    color: #fff !important;
     width: 50%;
     height: 40px;
     text-align: center;
@@ -467,7 +465,7 @@ button.btn-custom:hover {
 
 .alert-notif{
     animation: blink-animation 2s steps(5, start) infinite;
-    color: #fff; /* warna teks alert notif batas waktu */
+    color: #000; /* warna teks alert notif batas waktu */
     font-family: 'Zen Old Mincho', serif;
 }
 
@@ -542,7 +540,7 @@ button.btn-custom:hover {
 }
 
 .label-custom{
-    color: #fff; /* warna label field input */
+    color: #75594e; /* warna label field input */
 }
 
 /* Input */
@@ -621,7 +619,8 @@ body {
     /*     font-family: 'Zen Old Mincho', serif;
  */
     /* background: #010100; */
-    background: #b31315;
+    /* background: #b31315; Desember */
+    background-color: rgba(255,255,255, 0.85);
 }
 
 html{

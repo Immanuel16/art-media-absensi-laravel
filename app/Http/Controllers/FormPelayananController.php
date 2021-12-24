@@ -58,7 +58,7 @@ class FormPelayananController extends Controller
         
         $dataEmail = [
             'fullname' => Request()->fullname,
-            'email' => Request()->email,
+            'email' => str_replace(["Minggu, ", "Sabtu, "], '', Request()->email) ,
             'tanggal'=> $tglExplode,
             // 'notes' => Request()->notes,
             // 'created_at' => date('d M Y')
