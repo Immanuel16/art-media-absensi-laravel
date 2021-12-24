@@ -305,7 +305,7 @@ button.btn-custom:hover {
 
 .title-form {
     font-size: 1.8em;
-    color: #75594e; /* warna teks judul form */
+    color: #f0c9b8; /* warna teks judul form */
     font-weight: 800;
     padding-bottom: 10px;
     text-align: center;
@@ -567,14 +567,14 @@ button.btn-custom:hover {
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #fff; /* label text input */
+    color: #75594e; /* label text input */
 }
 
 .form__field:focus{
     padding-bottom: 6px;  
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, #fff);
+  border-image: linear-gradient(to right, #75594e);
   border-image-slice: 1;
   width: 100%;
 }
@@ -585,7 +585,7 @@ button.btn-custom:hover {
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #fff;
+    color: #75594e;
     font-weight:700;
 }
 
@@ -607,7 +607,7 @@ body {
  */
     /* background: #010100; */
     /* background: #b31315; Desember */
-    background-color: #f7e8e5;
+    background-image: linear-gradient(-45deg, #f4e9e5 50%, #f7e8e5 50%); /* Januari */
 }
 
 html{
