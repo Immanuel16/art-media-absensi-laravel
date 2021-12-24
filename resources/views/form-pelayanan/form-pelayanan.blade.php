@@ -38,7 +38,7 @@
 
                         <div class="row timer-responsive-1 ">
                             <div class="col-md-12 col-lg-12 col-sm-12" style="" align="center">
-                                <p class="alert-notif" style="text-align: center;">Batas Waktu Pengisian Form</p>
+                                <p class="alert-notif mt-3" style="text-align: center;">Batas Waktu Pengisian Form</p>
                                 <div class="alert alert-info custom-bg-alert text-center text-danger countdown font-weight-bold">
                                     <p class="countdown-left" style="color: #C3E0E5">
                                         <span id="days" class="mr-2"></span> <span id="hours"
@@ -73,7 +73,7 @@
                                 <div class="row">
                                     <div class="col-md-12" align="center">
                                         <div class="timer-responsive-2" style="margin-top: -10px;">
-                                            <p class="alert-notif" style="text-align: center;">Batas
+                                            <p class="alert-notif mt-3" style="text-align: center;">Batas
                                                 Waktu Pengisian Form</p>
 
                                             <div class="alert alert-info custom-bg-alert text-center text-danger font-weight-bold">

@@ -299,22 +299,9 @@ button.btn-custom:hover {
     /* border-style: solid; */
 }
 
-/* .btn-custom-sendiri:hover {
-    width: 250px;
-    height: 50px;
-    background: rgba(216, 199, 100, 0.87);
-    border: 2px solid #C4DBE0;
-    text-align: center;
-    color: #C4DBE0;
-    font-weight: 800;
-    animation-direction: alternate;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-name: glow-operator;
-    animation-timing-function: ease-in-out;
-    background-color: #cce;
-    transition: all 0.5s ease;
-} */
+.btn-custom-sendiri:hover {
+    color: #eee;
+}
 
 .title-form {
     font-size: 1.8em;
@@ -348,7 +335,7 @@ button.btn-custom:hover {
 }
 
 .invalid-input {
-    border-bottom: solid 2px red !important;
+    border-bottom: solid 2px #75594e !important;
     color: red;
 }
 
@@ -362,13 +349,13 @@ button.btn-custom:hover {
 }
 
 .custom-bg-alert{
-    background: #f0c9b8; /* background warna timer batas waktu */
-    border: 2px solid #f0c9b8;
-    color: #fff !important;
+    background: #75594e; /* background warna timer batas waktu */
+    border: 2px solid #75594e;
+    color: #f7e8e5 !important;
     width: 50%;
     height: 40px;
     text-align: center;
-    bottom: 20px;
+    bottom: 10px;
     font-family: 'Zen Old Mincho', serif !important;
     /* bottom: 20px; */
 }
@@ -465,7 +452,7 @@ button.btn-custom:hover {
 
 .alert-notif{
     animation: blink-animation 2s steps(5, start) infinite;
-    color: #000; /* warna teks alert notif batas waktu */
+    color: #75594e; /* warna teks alert notif batas waktu */
     font-family: 'Zen Old Mincho', serif;
 }
 
@@ -556,10 +543,10 @@ button.btn-custom:hover {
     font-family: 'Zen Old Mincho', serif;
     width: 100%;
     border: 0;
-    border-bottom: 1px solid #e36868;
+    border-bottom: 1px solid #75594e; /* border bottom input text */
     outline: 0;
     font-size: 1rem;
-    color: #C3E0E5;
+    color: #75594e; /* color input text */
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
@@ -620,7 +607,7 @@ body {
  */
     /* background: #010100; */
     /* background: #b31315; Desember */
-    background-color: rgba(255,255,255, 0.85);
+    background-color: #f7e8e5;
 }
 
 html{
