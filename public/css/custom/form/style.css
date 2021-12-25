@@ -546,7 +546,7 @@ button.btn-custom:hover {
     border-bottom: 1px solid #75594e; /* border bottom input text */
     outline: 0;
     font-size: 1rem;
-    color: #f0c9b8; /* color input text */
+    color: #75594e; /* color input text */
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
