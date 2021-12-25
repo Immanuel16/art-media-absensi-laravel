@@ -43,7 +43,7 @@ class FormPelayananController extends Controller
         $tgl = implode('; ', Request()->tanggal);
         $tglExplode = explode("; ", $tgl);
         
-        $allUsername = DB::table('data_pelayanan')->select('fullname')->where('fullname', 'like', $fullname)->where('tanggal', 'like', '%januari%')->first();
+        $allUsername = DB::table('data_pelayanan')->select('fullname')->where('fullname', 'like', $fullname)->where('tanggal', 'like', '%Januari%')->first();
         
         // dd($allUsername);
         
@@ -58,7 +58,7 @@ class FormPelayananController extends Controller
         
         $dataEmail = [
             'fullname' => Request()->fullname,
-            'email' => str_replace(["Minggu, ", "Sabtu, "], ['', ''], Request()->email) ,
+            'email' => str_replace(array("Minggu, ", "Sabtu, "), array('', ''), Request()->email) ,
             'tanggal'=> $tglExplode,
             // 'notes' => Request()->notes,
             // 'created_at' => date('d M Y')
