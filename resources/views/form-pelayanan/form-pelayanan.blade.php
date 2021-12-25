@@ -10,7 +10,7 @@
                     <div class="row" id="notification-closed">
                         <div class="col-md-12">
                             <div class="alert alert-danger text-center">
-                                Form pelayanan dibuka kembali 25 Desember pkl 10.00
+                                Form pelayanan dibuka kembali 25 Desember pkl 12.00
                             </div>
                         </div>
                     </div>
@@ -20,12 +20,12 @@
                             <!-- <img src="../img/crew.jpeg" width="100%" alt="" class="card-img-top img-atas"> -->
 
                             <div class="alert alert-success text-center alert-opened" style="width: 85%;background:#75594e;border-color:#75594e">
-                                Form pelayanan dibuka kembali pkl 10.00
+                                Form pelayanan dibuka kembali pkl 12.00
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-12 col-sm-12 mt-3" align="center">
                             <p class="title-countdown-opened alert-notif mt-4">Times left :</p>
-                            <p class="countdown-opened mb-4" style="color:#fff;font-weight: 800 !important;margin-top:-10px">
+                            <p class="countdown-opened mb-4" style="color:#f7e8e5;font-weight: 800 !important;margin-top:-10px">
                                 <span id="daysOpened" class="mr-2"></span> <span id="hoursOpened"
                                     class="mr-2"></span> <span id="minutesOpened" class="mr-2"></span>
                                 <span id="secondsOpened" class="mr-2"></span>
