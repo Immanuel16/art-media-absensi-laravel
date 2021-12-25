@@ -13,8 +13,7 @@
 #thumbnail-register {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     /* background: #003060; */ /* November */
-    /* background: #6e040e; */ /* Desember */
-    background-image: linear-gradient(-45deg, #f4e9e5 50%, #f7e8e5 50%); /* Januari */
+    background: #6e040e;
     /* backdrop-filter: blur(4px);   */
     opacity: 0.8;
     width: 90%;
@@ -26,6 +25,9 @@
     border-radius: 15px;
     padding: 4px;
 }
+
+
+
 
 #thumbnail-header-register {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -139,16 +141,16 @@ input[type="text"], input[type="password"], input[type="number"] {
 }
 
 input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hover {
-    border: 1px solid #75594e;
+    border: 1px solid #cccccc;
 }
 
 input[type="password"]:focus, input[type="password"]:active, input[type="text"]:focus, input[type="text"]:active, input[type="number"]:focus, input[type="number"]:active {
-    border: 1px solid #75594e;
+    border: 1px solid #fff;
     width: 100%;
 }
 
 input[type="password"]:focus+label:before, input[type="password"]:active+label:before input[type="text"]:focus+label:before, input[type="text"]:active+label:before, input[type="number"]:focus+label:before, input[type="number"]:active+label:before {
-    color: #f0c9b8;
+    color: #fff;
 }
 
 input[type="password"]+label, input[type="text"]+label, input[type="number"]+label {
@@ -231,7 +233,7 @@ input[type="checkbox"]+label {
     margin-bottom: 0px;
     font: 1em 'PT Sans Narrow', sans-serif;
     /* color: black; */
-    color: #75594e; /* warna label checkbox */
+    color: #fff; /* warna label checkbox */
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -247,7 +249,7 @@ input[type="checkbox"]+label:before {
     display: block;
     width: 15px;
     height: 15px;
-    border: 1px solid #75594e; /* wana kotak checkbox sebelum di ceklis */
+    border: 1px solid #fff; /* wana kotak checkbox sebelum di ceklis */
     position: absolute;
     left: 0;
     top: 4px;
@@ -262,7 +264,7 @@ input[type="checkbox"]:checked+label:before {
     left: 5px;
     border-radius: 0;
     opacity: 1;
-    border: 3.5px solid #75594e; /* wana kotak checkbox setelah di ceklis */
+    border: 3.5px solid #fff; /* wana kotak checkbox setelah di ceklis */
     border-top-color: transparent;
     border-left-color: transparent;
     -webkit-transform: rotate(45deg);
@@ -289,8 +291,8 @@ button.btn-custom:hover {
 .btn-custom-sendiri {
     width: 100px;               
     height: 40px;
-    background: #75594e;
-    border: 3px solid #75594e;
+    background: rgb(221, 52, 52);
+    border: 3px solid rgb(221, 52, 52);
     text-align: center;
     font-size: 1.3em;
     color: #eee;
@@ -299,19 +301,32 @@ button.btn-custom:hover {
     /* border-style: solid; */
 }
 
-.btn-custom-sendiri:hover {
-    color: #eee;
-}
+/* .btn-custom-sendiri:hover {
+    width: 250px;
+    height: 50px;
+    background: rgba(216, 199, 100, 0.87);
+    border: 2px solid #C4DBE0;
+    text-align: center;
+    color: #C4DBE0;
+    font-weight: 800;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: glow-operator;
+    animation-timing-function: ease-in-out;
+    background-color: #cce;
+    transition: all 0.5s ease;
+} */
 
 .title-form {
     font-size: 1.8em;
-    color: #f0c9b8; /* warna teks judul form */
+    color: #fff; /* warna teks judul form */
     font-weight: 800;
     padding-bottom: 10px;
     text-align: center;
     margin-bottom: 25px;
-    border: 2px solid #75594e; /* warna sisi luar kotak form  */
-    background: #75594e; /* background judul form */
+    border: 2px solid #e74949af; /* warna sisi luar kotak form  */
+    background: #e74949af; /* background judul form */
     /* margin-top: -50px; */
     font-family: 'Zen Old Mincho', serif;
     text-transform: capitalize;
@@ -335,7 +350,7 @@ button.btn-custom:hover {
 }
 
 .invalid-input {
-    border-bottom: solid 2px #75594e !important;
+    border-bottom: solid 2px red !important;
     color: red;
 }
 
@@ -349,13 +364,13 @@ button.btn-custom:hover {
 }
 
 .custom-bg-alert{
-    background: #75594e; /* background warna timer batas waktu */
-    border: 2px solid #75594e;
-    color: #f7e8e5 !important;
+    background: #e74949af; /* background warna timer batas waktu */
+    border: 2px solid #e74949af;
+    color: white !important;
     width: 50%;
     height: 40px;
     text-align: center;
-    bottom: 10px;
+    bottom: 20px;
     font-family: 'Zen Old Mincho', serif !important;
     /* bottom: 20px; */
 }
@@ -452,7 +467,7 @@ button.btn-custom:hover {
 
 .alert-notif{
     animation: blink-animation 2s steps(5, start) infinite;
-    color: #75594e; /* warna teks alert notif batas waktu */
+    color: #fff; /* warna teks alert notif batas waktu */
     font-family: 'Zen Old Mincho', serif;
 }
 
@@ -527,7 +542,7 @@ button.btn-custom:hover {
 }
 
 .label-custom{
-    color: #75594e; /* warna label field input */
+    color: #fff; /* warna label field input */
 }
 
 /* Input */
@@ -543,10 +558,10 @@ button.btn-custom:hover {
     font-family: 'Zen Old Mincho', serif;
     width: 100%;
     border: 0;
-    border-bottom: 1px solid #75594e; /* border bottom input text */
+    border-bottom: 1px solid #e36868;
     outline: 0;
     font-size: 1rem;
-    color: #75594e; /* color input text */
+    color: #C3E0E5;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
@@ -567,14 +582,14 @@ button.btn-custom:hover {
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #75594e; /* label text input */
+    color: #fff; /* label text input */
 }
 
 .form__field:focus{
     padding-bottom: 6px;  
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, #75594e);
+  border-image: linear-gradient(to right, #fff);
   border-image-slice: 1;
   width: 100%;
 }
@@ -585,7 +600,7 @@ button.btn-custom:hover {
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #75594e;
+    color: #fff;
     font-weight:700;
 }
 
@@ -606,8 +621,7 @@ body {
     /*     font-family: 'Zen Old Mincho', serif;
  */
     /* background: #010100; */
-    /* background: #b31315; Desember */
-    background-image: linear-gradient(-45deg, #f4e9e5 50%, #f7e8e5 50%); /* Januari */
+    background: #b31315;
 }
 
 html{
