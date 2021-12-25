@@ -10,7 +10,7 @@
                     <div class="row" id="notification-closed">
                         <div class="col-md-12">
                             <div class="alert alert-danger text-center">
-                                Form pelayanan dibuka kembali 25 Desember pkl 12.00
+                                Form pelayanan dibuka kembali tahun depan
                             </div>
                         </div>
                     </div>
