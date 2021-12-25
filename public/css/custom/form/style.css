@@ -148,7 +148,7 @@ input[type="password"]:focus, input[type="password"]:active, input[type="text"]:
 }
 
 input[type="password"]:focus+label:before, input[type="password"]:active+label:before input[type="text"]:focus+label:before, input[type="text"]:active+label:before, input[type="number"]:focus+label:before, input[type="number"]:active+label:before {
-    color: #75594e;
+    color: #f0c9b8;
 }
 
 input[type="password"]+label, input[type="text"]+label, input[type="number"]+label {
