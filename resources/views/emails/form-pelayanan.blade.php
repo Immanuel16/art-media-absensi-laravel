@@ -26,7 +26,7 @@
         <td style="width: 2%">:</td>
         <td style="width: 73%;text-transform:capitalize" rowspan="2" valign="top">
             @foreach ($dataEmail['tanggal'] as $item)
-                | {{ $item }} | 
+                | {{ str_replace(array("Minggu, ", "Sabtu, "), array('', ''), $item) }} | 
             @endforeach
         </td>
     </tr>
