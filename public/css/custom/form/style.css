@@ -370,7 +370,7 @@ button.btn-custom:hover {
     width: 50%;
     height: 40px;
     text-align: center;
-    bottom: 20px;
+    bottom: 10px;
     font-family: 'Zen Old Mincho', serif !important;
     /* bottom: 20px; */
 }

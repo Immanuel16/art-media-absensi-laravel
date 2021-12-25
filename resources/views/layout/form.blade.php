@@ -82,7 +82,7 @@
 <script src="{{secure_asset('js')}}/custom/form/config.js"></script>
 <script src="{{secure_asset('js')}}/custom/form/timer.js"></script>
 <script src="{{secure_asset('js')}}/custom/form/id-datepicker.js"></script>
-{{-- <script src="{{ secure_asset('js/animation/snow/index.js') }}"></script> --}}
+<script src="{{ secure_asset('js/animation/snow/index.js') }}"></script>
 <script>
     $(document).ready(function() {
         $.datepicker.setDefaults(
