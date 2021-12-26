@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AbsensiController;
 use App\Http\Controllers\CrewController;
+use App\Http\Controllers\DataPelayananController;
 use App\Http\Controllers\FormAcaraController;
 use App\Http\Controllers\FormPelayananController;
 use App\Http\Controllers\FormProcessController;
@@ -52,6 +53,10 @@ Route::post('/form-acara/test', [FormAcaraController::class, 'sendEmail']);
 // Routing untuk form pelayanan
 Route::get('form-pelayanan', [FormPelayananController::class, 'index']);
 Route::post('form-pelayanan/add', [FormPelayananController::class, 'add']);
+
+/* routing untuk data pelayanan */
+Route::get('data-pelayanan', [DataPelayananController::class, 'index']);
+
 
 
 // Route::resource('sendEmail', [FormProcessController::class]);
