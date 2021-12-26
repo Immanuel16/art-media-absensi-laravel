@@ -45,9 +45,9 @@
             <br>
             <div class="row mt-3">
                 <div class="col-md-12" align="right">
-                    <div class="justify-content-center">
+                    <div class="" style="justify-content: center">
                         {{ $crews->links() }}
-                    </div>        
+                    </div>
                 </div>
             </div>
             <div class="row mt-1">
