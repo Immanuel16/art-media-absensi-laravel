@@ -57,6 +57,6 @@ Button Call
 <span style="font-size: 1em;font-weight:570;color:#000;font-style:oblique;margin-top:-20px">
     (Wakil Kepala Bidang Multimedia Rayon 18)
 </span>
-<div style="width:100%;height:3px;background-color:rgba(10, 65, 105, 0.5);margin-top: 15px;"></div>
+<div style="width:100%;height:3px;background-color:#b31315;margin-top: 15px;"></div>
 
 @endcomponent
