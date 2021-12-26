@@ -45,16 +45,16 @@
             <br>
             <div class="row mt-3">
                 <div class="col-md-12" align="right">
-                    <div class="" style="justify-content: center">
+                    <div class="" style="display:flex;justify-content: center">
                         {{ $crews->links() }}
                     </div>
                 </div>
             </div>
-            {{-- <div class="row mt-1">
+            <div class="row mt-1">
                 <div class="col-md-12" align="center">
                     Halaman <span style="font-weight: 600">{{ $crews->currentPage() }}</span> dari <span style="font-weight: 600">{{ $crews->lastPage() }}</span>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </div>
 @endsection
