@@ -20,7 +20,7 @@
                             <!-- <img src="../img/crew.jpeg" width="100%" alt="" class="card-img-top img-atas"> -->
 
                             <div class="alert alert-success text-center alert-opened" style="width: 85%;background:red;border-color:red">
-                                Form pelayanan dibuka kembali pkl 12.00
+                                Form pelayanan dibuka kembali pkl 10.45
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-12 col-sm-12 mt-3" align="center">
