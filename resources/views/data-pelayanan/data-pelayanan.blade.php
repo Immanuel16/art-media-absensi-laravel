@@ -50,11 +50,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-1">
+            {{-- <div class="row mt-1">
                 <div class="col-md-12" align="center">
                     Halaman <span style="font-weight: 600">{{ $crews->currentPage() }}</span> dari <span style="font-weight: 600">{{ $crews->lastPage() }}</span>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 @endsection
