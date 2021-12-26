@@ -22,9 +22,9 @@ class DataPelayananController extends Controller
 
     public function search(Request $req)
     {
-        $cari = $req->cari;
+        $cari = $req->query;
 
-        $crews = DB::table('data_pelayanan')->where('tanggal', 'like', '%Januari%')->distinct('fullname')->where(function ($query) use ($cari) {
+        $crews = DB::table('data-pelayanan')->where('tanggal', 'like', '%Januari%')->distinct('fullname')->where(function ($query) use ($cari) {
             $query->where('tanggal', 'like', '%' . $cari . '%')->orWhere('fullname', 'like', '%' . strtolower($cari) . '%');
         })->paginate(15);
 

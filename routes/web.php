@@ -56,7 +56,7 @@ Route::post('form-pelayanan/add', [FormPelayananController::class, 'add']);
 
 /* routing untuk data pelayanan */
 Route::get('data-pelayanan', [DataPelayananController::class, 'index']);
-
+Route::get('data-pelayanan/search', [DataPelayananController::class, 'search']);
 
 
 // Route::resource('sendEmail', [FormProcessController::class]);
