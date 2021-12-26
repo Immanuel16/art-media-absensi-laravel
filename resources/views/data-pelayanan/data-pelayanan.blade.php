@@ -7,7 +7,7 @@
             <div class="row mt-3">
                 <div class="col-md-12">
                     <form action="/data-pelayanan/search" method="get" autocomplete="off">
-                        <input type="text" name="cari" placeholder="Search..." value="{{ old('cari') }}">
+                        <input type="text" name="cari" placeholder="Search..." value="{{ old('keyword') }}">
                         <input type="submit" value="Search">
                     </form>
                 </div>

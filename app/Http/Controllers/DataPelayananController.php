@@ -22,7 +22,7 @@ class DataPelayananController extends Controller
 
     public function search(Request $req)
     {
-        $keyword = $req->cari;
+        $keyword = $req->keyword;
 
         $crews = DB::table('data_pelayanan')->where('tanggal', 'like', '%Januari%')->distinct('fullname')->where(function ($query) use ($keyword) {
             $query->where('tanggal', 'like', '%' . $keyword . '%')->orWhere('fullname', 'like', '%' . strtolower($keyword) . '%');
