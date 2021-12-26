@@ -22,10 +22,10 @@ class DataPelayananController extends Controller
 
     public function search(Request $req)
     {
-        $cari = $req->keyword;
+        $keyword = $req->cari;
 
-        $crews = DB::table('data_pelayanan')->where('tanggal', 'like', '%Januari%')->distinct('fullname')->where(function ($query) use ($cari) {
-            $query->where('tanggal', 'like', '%' . $cari . '%')->orWhere('fullname', 'like', '%' . strtolower($cari) . '%');
+        $crews = DB::table('data_pelayanan')->where('tanggal', 'like', '%Januari%')->distinct('fullname')->where(function ($query) use ($keyword) {
+            $query->where('tanggal', 'like', '%' . $keyword . '%')->orWhere('fullname', 'like', '%' . strtolower($keyword) . '%');
         })->paginate(15);
 
         return view('data-pelayanan.data-pelayanan', ['crews' => $crews]);
