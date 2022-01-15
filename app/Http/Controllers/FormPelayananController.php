@@ -40,11 +40,13 @@ class FormPelayananController extends Controller
         
         $fullname = Request()->fullname;
         $email = DB::table('data_email')->select('email')->where('fullname', 'like', Request()->fullname);
+
+        dd($email)
         
         $tgl = implode('; ', Request()->tanggal);
         $tglExplode = explode("; ", $tgl);
         
-        $allUsername = DB::table('data_pelayanan')->select('fullname')->where('fullname', 'like', $fullname)->where('tanggal', 'like', '%Januari%')->first();
+        $allUsername = DB::table('data_pelayanan')->select('fullname')->where('fullname', 'like', $fullname)->where('tanggal', 'like', '%Februari%')->first();
 
         $data = [
             'fullname' => strtolower(Request()->fullname),
