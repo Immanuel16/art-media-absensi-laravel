@@ -10,7 +10,7 @@
                     <div class="row" id="notification-closed">
                         <div class="col-md-12">
                             <div class="alert alert-danger text-center">
-                                Form pelayanan dibuka kembali 25 Februari 2022  pukul 10.00
+                                Form pelayanan dibuka pada 25 Januari 2022  pukul 10.00
                             </div>
                         </div>
                     </div>
@@ -20,7 +20,7 @@
                             <!-- <img src="../img/crew.jpeg" width="100%" alt="" class="card-img-top img-atas"> -->
 
                             <div class="alert alert-success text-center alert-opened" style="width: 85%;background:red;border-color:red">
-                                Form pelayanan dibuka pada 25 Januari 2022  pukul 10.00
+                                Form pelayanan dibuka pada 25 Februari 2022  pukul 10.00
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-12 col-sm-12 mt-3" align="center">
