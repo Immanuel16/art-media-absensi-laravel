@@ -10,7 +10,7 @@
                     <div class="row" id="notification-closed">
                         <div class="col-md-12">
                             <div class="alert alert-danger text-center">
-                                Form pelayanan dibuka kembali tahun depan
+                                Form pelayanan dibuka kembali 25 Februari 2022  pukul 10.00
                             </div>
                         </div>
                     </div>
@@ -20,7 +20,7 @@
                             <!-- <img src="../img/crew.jpeg" width="100%" alt="" class="card-img-top img-atas"> -->
 
                             <div class="alert alert-success text-center alert-opened" style="width: 85%;background:red;border-color:red">
-                                Form pelayanan dibuka kembali pkl 10.45
+                                Form pelayanan dibuka pada 25 Januari 2022  pukul 10.00
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-12 col-sm-12 mt-3" align="center">
@@ -101,7 +101,7 @@
                                 
                                 {{-- Email --}}
                                 
-                                <div class="form__group field">
+                                {{-- <div class="form__group field">
                                     <input type="input" class="form__field @error('email') invalid-input @enderror" placeholder="Input your email" name="email" id='email' value="{{ old('email') }}" required />
                                     <label for="name" class="form__label">Email</label>
                                     <div class="message-error">
@@ -109,7 +109,7 @@
                                             {{ $message }}
                                         @enderror
                                     </div>
-                                </div>
+                                </div> --}}
                                 
                                 <div class="row">
                                     <div class="col-md-12 mt-3 mb-5">
@@ -121,8 +121,8 @@
                                 <div class="row" style="margin-top: -50px;">
                                     <div class="col-md-12 mt-custom">
                                         <input type="checkbox" id="box-1" name="tanggal[]"
-                                            value="Minggu, 09 Januari 2022">
-                                        <label for="box-1">Minggu, 09 Januari 2022</label>
+                                            value="Minggu, 06 Februari 2022">
+                                        <label for="box-1">Minggu, 06 Februari 2022</label>
                                     </div>
                                     {{-- <div class="col-md-12 mt-custom">
                                         <input type="checkbox" id="box-8" name="tanggal[]"
@@ -131,21 +131,21 @@
                                     </div> --}}
                                     <div class="col-md-12 mt-custom">
                                         <input type="checkbox" id="box-2" name="tanggal[]"
-                                            value="Minggu, 16 Januari 2022">
-                                        <label for="box-2">Minggu, 16 Januari 2022</label>
+                                            value="Minggu, 13 Februari 2022">
+                                        <label for="box-2">Minggu, 13 Februari 2022</label>
                                     </div>
                                     <div class="col-md-12 mt-custom">
                                         <input type="checkbox" id="box-3" name="tanggal[]"
-                                            value="Minggu, 23 Januari 2022">
-                                        <label for="box-3">Minggu, 23 Januari 2022 </label>
+                                            value="Minggu, 20 Februari 2022">
+                                        <label for="box-3">Minggu, 20 Februari 2022 </label>
                                     </div>
                                     {{-- <div class="col-md-12 mt-custom">
                                         <input type="checkbox" id="box-4" name="tanggal[]" value="Sabtu, 25 Desember 2021">
                                         <label for="box-4">Sabtu, 25 Desember 2021 </label>
                                     </div> --}}
                                     <div class="col-md-12 mt-custom">
-                                        <input type="checkbox" id="box-5" name="tanggal[]" value="Minggu, 30 Januari 2022">
-                                        <label for="box-5">Minggu, 30 Januari 2022 </label>
+                                        <input type="checkbox" id="box-5" name="tanggal[]" value="Minggu, 27 Februari 2022">
+                                        <label for="box-5">Minggu, 27 Februari 2022 </label>
                                     </div>
                                     {{-- <div class="col-md-12 mt-custom">
                                         <input type="checkbox" id="box-6" name="tanggal[]" value="Sabtu, 01 Januari 2022">

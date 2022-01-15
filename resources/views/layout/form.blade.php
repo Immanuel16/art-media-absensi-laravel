@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="{{secure_asset('template')}}/dist/css/adminlte.min.css">
   <link rel="stylesheet" href="{{secure_asset('css')}}/custom/form/style.css">
   <link rel="stylesheet" href="{{secure_asset('css')}}/animation/loading/style.css">
+  <!-- Styling AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- JQUERY UI -->
   <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
   
@@ -82,6 +84,7 @@
 <script src="{{secure_asset('js')}}/custom/form/config.js"></script>
 <script src="{{secure_asset('js')}}/custom/form/timer.js"></script>
 <script src="{{secure_asset('js')}}/custom/form/id-datepicker.js"></script>
+<script src="{{secure_asset('js')}}/custom/form/autocomplete.js"></script>
 <script src="{{ secure_asset('js/animation/snow/index.js') }}"></script>
 <script>
     $(document).ready(function() {

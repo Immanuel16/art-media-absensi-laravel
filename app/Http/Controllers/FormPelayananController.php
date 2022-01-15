@@ -27,29 +27,28 @@ class FormPelayananController extends Controller
     public function add(){
         Request()->validate([
             'fullname' => 'required|min:3|regex:/^[\pL\s]+$/u',
-            'email' =>'required|regex:/^.+@.+$/i'
+            // 'email' =>'required|regex:/^.+@.+$/i'
         ],
         [
             'fullname.required' => 'nama lengkap wajib diisi',
             'fullname.min' => 'nama lengkap minimal 3 huruf',
             'fullname.regex' => 'nama lengkap hanya berupa huruf saja',
-            'email.required' => 'email wajib diisi',
-            'email.regex' => 'email tidak sesuai dengan format'
+            // 'email.required' => 'email wajib diisi',
+            // 'email.regex' => 'email tidak sesuai dengan format'
         ]
         );
         
         $fullname = Request()->fullname;
+        $email = DB::table('data_email')->select('email')->where('fullname', 'like', Request()->fullname);
         
         $tgl = implode('; ', Request()->tanggal);
         $tglExplode = explode("; ", $tgl);
         
         $allUsername = DB::table('data_pelayanan')->select('fullname')->where('fullname', 'like', $fullname)->where('tanggal', 'like', '%Januari%')->first();
-        
-        // dd($allUsername);
-        
+
         $data = [
             'fullname' => strtolower(Request()->fullname),
-            'email' => Request()->email,
+            'email' => $email,
             'tanggal'=> $tgl,
             // 'hasVaccinated' => Request()->hasVaccinated,
             // 'notes' => Request()->notes,
@@ -58,7 +57,7 @@ class FormPelayananController extends Controller
         
         $dataEmail = [
             'fullname' => Request()->fullname,
-            'email' => Request()->email,
+            'email' => $email,
             'tanggal'=> $tglExplode,
             // 'notes' => Request()->notes,
             // 'created_at' => date('d M Y')

@@ -5,7 +5,7 @@
     Shalom <span style="text-transform:capitalize">{{ $dataEmail['fullname'] }}</span>,
 </p>
 <p style="font-size: 1em;font-weight:500;color:#000">
-    Terima kasih untuk waktunya sudah mengisi Form Pelayanan di bulan Januari 2022.
+    Terima kasih untuk waktunya sudah mengisi Form Pelayanan bulan Februari 2022.
 </p>
 <p style="font-size: 1em;font-weight:500;color:#000">
     Di bawah ini merupakan informasi yang sudah diinput oleh anda : 
@@ -52,11 +52,11 @@ Button Call
 <br>
 <br>
 <p style="font-size: 1em;font-weight:670;color:#000">
-    Nuel
+    ART Media
 </p>
-<span style="font-size: 1em;font-weight:570;color:#000;font-style:oblique;margin-top:-20px">
+{{-- <span style="font-size: 1em;font-weight:570;color:#000;font-style:oblique;margin-top:-20px">
     (Wakil Kepala Bidang Multimedia Rayon 18)
-</span>
+</span> --}}
 <div style="width:100%;height:3px;background-color:#b31315;margin-top: 15px;"></div>
 
 @endcomponent
