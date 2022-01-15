@@ -30,6 +30,6 @@ class SendMailFormPelayanan extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.form-pelayanan')->subject('Email Notifikasi Form Pelayanan Januari 2022');
+        return $this->markdown('emails.form-pelayanan')->subject('Email Notifikasi Form Pelayanan Februari 2022');
     }
 }
