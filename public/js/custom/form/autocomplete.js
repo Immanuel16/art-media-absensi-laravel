@@ -29,7 +29,7 @@ $(document).ready(function () {
         'Diesce',
         // 'Evy',
         // 'Rio',
-        'Iwan'
+        // 'Iwan'
     ];
 
     $("#name").autocomplete({
