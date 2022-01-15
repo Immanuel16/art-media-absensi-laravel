@@ -38,7 +38,7 @@ class FormPelayananController extends Controller
         ]
         );
         
-        $fullname = Request()->fullname;
+        $fullname = strtolower(Request()->fullname);
         $email = DB::table('data_email')->select('email')->where('fullname', 'like', Request()->fullname);
 
         dd($email);
