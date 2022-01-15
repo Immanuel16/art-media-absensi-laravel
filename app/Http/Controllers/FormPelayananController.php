@@ -50,7 +50,7 @@ class FormPelayananController extends Controller
 
         $data = [
             'fullname' => strtolower(Request()->fullname),
-            'email' => $email['email'],
+            'email' => $email[0],
             'tanggal'=> $tgl,
             // 'hasVaccinated' => Request()->hasVaccinated,
             // 'notes' => Request()->notes,
@@ -60,7 +60,7 @@ class FormPelayananController extends Controller
         
         $dataEmail = [
             'fullname' => Request()->fullname,
-            'email' => $email['email'],
+            'email' => $email[0],
             'tanggal'=> $tglExplode,
             // 'notes' => Request()->notes,
             // 'created_at' => date('d M Y')
