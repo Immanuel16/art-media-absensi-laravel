@@ -39,7 +39,7 @@ class FormPelayananController extends Controller
         );
         
         $fullname = strtolower(Request()->fullname);
-        $email = DB::table('data_email')->select('email')->where('fullname', 'like', Request()->fullname);
+        $email = DB::table('data_email')->select('email')->where('fullname', 'like', $fullname);
 
         // dd($email);
         
@@ -56,6 +56,7 @@ class FormPelayananController extends Controller
             // 'notes' => Request()->notes,
             'created_at' => date('d-m-Y H:i:s')
         ];
+        dd($data);
         
         $dataEmail = [
             'fullname' => Request()->fullname,
