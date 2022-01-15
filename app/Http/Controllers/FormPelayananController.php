@@ -39,7 +39,7 @@ class FormPelayananController extends Controller
         );
         
         $fullname = strtolower(Request()->fullname);
-        $email = DB::table('data_email')->select('email')->where('fullname', 'like', $fullname)->value();
+        $email = DB::table('data_email')->select('email')->where('fullname', 'like', $fullname)->first();
 
         // dd($email);
         
@@ -50,7 +50,7 @@ class FormPelayananController extends Controller
 
         $data = [
             'fullname' => strtolower(Request()->fullname),
-            'email' => $email,
+            'email' => $email['email'],
             'tanggal'=> $tgl,
             // 'hasVaccinated' => Request()->hasVaccinated,
             // 'notes' => Request()->notes,
@@ -60,7 +60,7 @@ class FormPelayananController extends Controller
         
         $dataEmail = [
             'fullname' => Request()->fullname,
-            'email' => $email,
+            'email' => $email['email'],
             'tanggal'=> $tglExplode,
             // 'notes' => Request()->notes,
             // 'created_at' => date('d M Y')
