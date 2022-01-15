@@ -74,14 +74,14 @@ class FormPelayananController extends Controller
                 Alert::success('Terima Kasih', 'Data Anda sudah kami terima');
                 dd("bisa doang");
                 $this->FormPelayananModel->saveData($data);
-                $this->sendEmailPelayanan(Request()->email, $dataEmail);
+                $this->sendEmailPelayanan($email->email, $dataEmail);
                 return redirect('form-pelayanan');
             }
         } else{
             Alert::success('Terima Kasih', 'Data Anda sudah kami terima');
                 // dd("bisa");
                 $this->FormPelayananModel->saveData($data);
-                $this->sendEmailPelayanan(Request()->email, $dataEmail);
+                $this->sendEmailPelayanan($email->email, $dataEmail);
                 return redirect('form-pelayanan');
                 
                 
