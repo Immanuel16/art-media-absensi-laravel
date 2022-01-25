@@ -10,7 +10,7 @@ var myfunc = setInterval(function () {
 
     var startDate = new Date().getTime();
     // var startDate = new Date("Feb 25, 2021 18:00:00").getTime();
-    var endDate = new Date("Jan 26, 2022 00:00:00").getTime();
+    var endDate = new Date("Jan 28, 2022 00:00:00").getTime();
     var timeleft = endDate - startDate;
 
     var startDateOpened = new Date().getTime();
