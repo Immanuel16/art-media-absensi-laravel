@@ -15,7 +15,7 @@ class DataPelayananController extends Controller
 
     public function index()
     {
-        $crews = DB::table('data_pelayanan')->where('tanggal', 'like', '%Januari%')->distinct('fullname')->paginate(10);
+        $crews = DB::table('data_pelayanan')->where('tanggal', 'like', '%Februari%')->distinct('fullname')->paginate(10);
 
         return view('data-pelayanan.data-pelayanan', ['crews' => $crews]);
     }
@@ -24,7 +24,7 @@ class DataPelayananController extends Controller
     {
         $keyword = $req->keyword;
 
-        $crews = DB::table('data_pelayanan')->where('tanggal', 'like', '%Januari%')->distinct('fullname')->where(function ($query) use ($keyword) {
+        $crews = DB::table('data_pelayanan')->where('tanggal', 'like', '%Februari%')->distinct('fullname')->where(function ($query) use ($keyword) {
             $query->where('tanggal', 'like', '%' . $keyword . '%')->orWhere('fullname', 'like', '%' . strtolower($keyword) . '%');
         })->paginate(15);
 

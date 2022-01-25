@@ -1,5 +1,5 @@
 @extends('layout.public_layout')
-@section('title', 'Data Pelayanan Januari 2022')
+@section('title', 'Data Pelayanan Februari 2022')
 
 @section('content')
     <div class="card mt-5">
